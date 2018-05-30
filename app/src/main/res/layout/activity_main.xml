@@ -22,7 +22,8 @@
             android:id="@+id/ll_scoreboard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:padding="16dp"
+                        android:padding="8dp"
                         android:text="@string/team_a"
                         android:textColor="@android:color/white"
                         android:textSize="20sp"
@@ -52,7 +53,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
+                        android:paddingBottom="8dp"
                         android:text="@string/teamAScore"
                         android:textColor="@android:color/white"
                         android:textSize="56sp" />
@@ -72,7 +73,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
+                        android:paddingBottom="8dp"
                         android:text="@string/teamAcards"
                         android:textColor="@android:color/white"
                         android:textSize="30sp"
@@ -101,7 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:padding="16dp"
+                        android:padding="8dp"
                         android:text="@string/teamBName"
                         android:textColor="@android:color/white"
                         android:textSize="20sp"
@@ -112,7 +113,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
+                        android:paddingBottom="8dp"
                         android:text="@string/teamBScore"
                         android:textColor="@android:color/white"
                         android:textSize="56sp" />
@@ -132,7 +133,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
-                        android:paddingBottom="24dp"
+                        android:paddingBottom="8dp"
                         android:text="@string/teamBcards"
                         android:textColor="@android:color/white"
                         android:textSize="30sp"
@@ -160,6 +161,7 @@
             android:layout_alignParentBottom="true"
             android:layout_below="@id/ll_scoreboard"
             android:gravity="bottom|center_vertical"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
 
@@ -167,8 +169,9 @@
                 android:id="@+id/FirstGame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
-                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/rounded_button_games"
                 android:onClick="firstgame"
                 android:text="1st game" />
@@ -177,8 +180,9 @@
                 android:id="@+id/SecondGame"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginRight="8dp"
                 android:background="@drawable/rounded_button_games"
                 android:onClick="finalScore"
                 android:text="2nd game" />
@@ -186,7 +190,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
+                android:layout_marginBottom="8dp"
                 android:layout_marginLeft="16dp"
                 android:background="@drawable/rounded_button_games"
                 android:onClick="restart"
