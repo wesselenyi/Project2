@@ -8,19 +8,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int teamAScore = 0;
-    int teamBScore = 0;
-    int teamAcards = 0;
-    int teamBcards = 0;
-
-    int ScoreTeamAGame1 = 0;
-
-    int ScoreTeamBGame1 = 0;
-
-    int teamACardsGame1 = 0;
-
-    int teamBCardsGame1 = 0;
-
     private final String TEAMASCORE_KEY = "teamascore_key";
     private final String TEAMBSCORE_KEY = "teambscore_key";
     private final String TEAMACARD_KEY = "teamacard_key";
@@ -30,9 +17,15 @@ public class MainActivity extends AppCompatActivity {
     private final String GAME1TEAMACARD_KEY = "game1teamacard_key";
     private final String GAME1TEAMBCARD_KEY = "game1teambcard_key";
     private final String SUBMITTED_KEY = "submitted-key";
+    int teamAScore = 0;
+    int teamBScore = 0;
+    int teamAcards = 0;
+    int teamBcards = 0;
+    int ScoreTeamAGame1 = 0;
+    int ScoreTeamBGame1 = 0;
+    int teamACardsGame1 = 0;
+    int teamBCardsGame1 = 0;
     private boolean submitted = false;
-
-
 
 
     @Override
